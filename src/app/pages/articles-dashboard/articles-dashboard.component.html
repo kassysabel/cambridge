@@ -1,0 +1,20 @@
+<div class="dashboard-search-cntr">
+    <h2 class="articles-dashboard-title">All Articles</h2>
+    <searchbar [articles]="listArticles"></searchbar>
+</div>
+<div class="main-dashboard-cntr" fxLayout="row">
+  <div class="articles-dashboard-cntr" fxLayout="column">
+    <div class="list-articles-cntr" fxLayout="column" fxLayoutGap="32px">
+      <div class="articles-cntr" *ngFor="let article of listArticles">
+        <article-card class="article-document" [article]="article"></article-card>
+      </div>
+    </div>
+  </div>
+  <div class="sidebar-dashboard-cntr" fxLayout="column">
+    <div class="sidebar-cntr">
+        <div class="sidebar-cntr-margins">
+            <sidebar [cardContents]="articlesDashboardCards"></sidebar>
+        </div>
+    </div>
+  </div>
+</div>

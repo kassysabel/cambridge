@@ -1,0 +1,23 @@
+
+div.login-cntr {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  .login-details-input {
+      display: inline-block;
+      min-width: 100%;
+  }
+  .login-form-field {
+      display: inline;
+      margin: 5px;
+  }
+  .login-btn {
+    min-width: 100%;
+  }
+  .not-found {
+    color: red;
+    font-size: 14px;
+    font-weight: 600;
+  }
+}

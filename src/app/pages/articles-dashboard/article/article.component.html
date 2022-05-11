@@ -1,0 +1,19 @@
+<div class="article">
+  <h2 class="form-title">{{formTitle}}</h2>
+  <div class="article-form" [formGroup]="articleForm">
+    <mat-form-field class="article-form-field" appearance="outline" floatLabel="always">
+      <mat-label class="article-title-input">Title</mat-label>
+      <input matInput type="text" class="input-field" [readonly]="hasValue && !isEdit" formControlName="articleTitle" [(ngModel)]="articleItem.title" placeholder="Article Title">
+    </mat-form-field>
+    <mat-form-field class="article-form-field" appearance="outline" floatLabel="always">
+      <mat-label class="article-owner-input">Owner</mat-label>
+      <input matInput type="text"  class="input-field" [readonly]="true" formControlName="articleOwner" [(ngModel)]="user.name" placeholder="Article Owner">
+    </mat-form-field>
+    <mat-form-field class="article-form-field" appearance="outline" floatLabel="always">
+      <mat-label class="article-body-input">Body</mat-label>
+      <textarea matInput type="text"  class="textarea-field" [readonly]="hasValue && !isEdit" formControlName="articleBody" [(ngModel)]="articleItem.body" placeholder="Article Body"></textarea>
+      </mat-form-field>
+      <button mat-button type="submit" class="article-button-field" mat-flat-button *ngIf="!hasValue" color="primary" (click)="createArticle()">Create Article</button>
+      <button mat-button type="submit" class="article-button-field" mat-flat-button *ngIf="hasValue" color="primary" (click)="editArticle()">Edit Article</button>
+  </div>
+</div>

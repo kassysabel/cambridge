@@ -1,0 +1,24 @@
+.article-card {
+    max-width: 400px;
+    color: #455a64;
+    min-height: 250px;
+    .card-title {
+        font-weight: 500;
+    }
+    .card-body-title, .card-body {
+        margin: 0 16px;
+    }
+    .card-subtitle {
+        font-weight: 200;
+    }
+    .articles-cntr {
+        display: flex;
+    }
+    .card-button-action {
+        float: right;
+    }
+    mat-card-actions.mat-card-actions {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+}

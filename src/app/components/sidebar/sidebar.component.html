@@ -1,0 +1,13 @@
+<div class="sidebar-cntr">
+  <h3 class="title">Actions</h3>
+    <div *ngFor="let cardContent of cardContents">
+      <mat-card class="card-container">
+        <mat-card-content [routerLink]="[cardContent.routerLink]" class="card card-small">
+              <div class="action-card">
+                <svg class="plus-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                <span>{{cardContent.caption}}</span>
+              </div>
+        </mat-card-content>
+        </mat-card>
+    </div>
+</div>

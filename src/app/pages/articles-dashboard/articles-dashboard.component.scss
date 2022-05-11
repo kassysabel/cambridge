@@ -1,0 +1,23 @@
+.main-dashboard-cntr {
+    margin: 30px;
+    display: inline-flex;
+    .articles-dashboard-cntr {
+        display: inline-block;
+    }
+    .list-articles-cntr {
+        margin: 10px;
+    }
+    .articles-cntr {
+        display: inline-flex;
+        margin: 15px;
+    }
+}
+.dashboard-search-cntr {
+    margin: 30px;
+}
+.sidebar-cntr {
+    margin: 10px;
+    .sidebar-cntr-margins {
+        margin: 25px;
+    }
+}

@@ -1,0 +1,19 @@
+<div class="login-cntr">
+    <div class="login-details-cntr">
+        <div class="login-details-title">
+            <h2>Login to Access</h2>
+        </div>
+        <div class="login-details-input" [formGroup]="loginForm">
+            <mat-form-field class="login-form-field" appearance="fill" floatLabel="always">
+                <mat-label class="login-email-input">Email</mat-label>
+                <input matInput type="email" formControlName="email" placeholder="email@domain.com">
+            </mat-form-field>
+            <mat-form-field class="login-form-field" appearance="fill" floatLabel="always">
+                <mat-label class="login-username-input">Username</mat-label>
+                <input matInput type="text" formControlName="username" placeholder="John Smith">
+            </mat-form-field>
+            <span class="not-found" *ngIf="!isAccountFound">Account not found</span>
+            <button mat-button class="login-btn" type="submit" mat-flat-button color="accent" (click)="loginUser()">Login</button>
+        </div>
+    </div>
+</div>

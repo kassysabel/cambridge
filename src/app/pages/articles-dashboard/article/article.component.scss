@@ -1,0 +1,16 @@
+.article {
+    margin: 30px;
+    .article-form {
+        padding: 30px;
+        .article-form-field {
+            width: 60%;
+        }
+        .textarea-field {
+            min-height: 120px;
+        }
+        .article-button-field {
+            display: block;
+            min-width: 70px;
+        }
+    } 
+}

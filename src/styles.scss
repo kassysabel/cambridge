@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+
+@import url('@fortawesome\fontawesome-free\css\all.css');
+
+@include mat.core();
+
+$my-primary: mat.define-palette(mat.$blue-grey-palette, 900);
+$my-accent: mat.define-palette(mat.$brown-palette, A700, A400, 600);
+
+$my-theme: mat.define-light-theme((
+ color: (
+   primary: $my-primary,
+   accent: $my-accent,
+ )
+));
+
+
+@include mat.all-component-themes($my-theme);
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+

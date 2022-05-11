@@ -1,0 +1,13 @@
+
+mat-toolbar.toolbar {
+    .spacer {
+        flex: 1 1 auto;
+    }
+    .toolbar-nickname {
+        padding: 0 10px;
+        .nickname {
+            font-weight: 200;
+            font-style: italic;
+        }
+    }
+}
